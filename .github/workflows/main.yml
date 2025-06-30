@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://gitlab.com/supragrand-group/Supragrand-project/-/raw/0d1c02ba07294bd4eb59abaf0f422e13d7205e59/Downloads.bat" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://gitlab.com/supragrand-group/Supragrand-project/-/raw/0d1c02ba07294bd4eb59abaf0f422e13d7205e59/Downloads.bat?inline=false" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Show Website
