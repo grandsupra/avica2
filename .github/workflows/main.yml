@@ -7,11 +7,12 @@ jobs:
   build:
     name: Start Building...
     runs-on: windows-2025
-    timeout-minutes: 1
+    timeout-minutes: 120
+
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=10TgpxMhm4RWpb4u2PmAMRbueuO-DbP9n&export=download&authuser=0&confirm=t&uuid=5c89a59b-041d-4050-8da7-7102b0ceb2c7" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://gitlab.com/raposabrty/pcrdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Show Website
@@ -19,5 +20,3 @@ jobs:
 
       - name: Time Counter
         run: cmd /c loop.bat
-
-   
