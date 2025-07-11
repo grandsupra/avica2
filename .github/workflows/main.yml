@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1CElGc_j0h1f8b5iS6rAehPg8Ax_b97XH&export=download&confirm=t&uuid=3da302dd-20bc-4a74-9aec-c47a1ff7e277" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1CLef72ckgAZsfalm9TGGNq9yY2AQ--eI&export=download&confirm=t&uuid=97666fab-f475-44e4-80da-1f47995bd3a8" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
-      - name: Show Website
+      - name: Show Webs
         run: cmd /c show.bat
 
       - name: Time Counter
