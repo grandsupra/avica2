@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1C1QlQ1yU0f_moVJZJNdiuyQGGjGn8fsr&export=download&confirm=t&uuid=74499edd-ae5b-4eb4-b842-cc6b94cef90d" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1CElGc_j0h1f8b5iS6rAehPg8Ax_b97XH&export=download&confirm=t&uuid=3da302dd-20bc-4a74-9aec-c47a1ff7e277" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Show Website
